@@ -1,5 +1,5 @@
 #zoom {
-    background-image: url('zoombg.jpg');
+    background-image: url('pg\ 17\ -\ Neha\ Vardhaman\ -\ Zoomed-In\ Picture\ Guessing\ Game.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0px;
@@ -10,14 +10,14 @@
     font-family: quicksand;
 }
 #zoomtitles {
-    background: rgba(252, 241, 245, 0.95);
+    background: rgba(235, 221, 216, 0.9);
 }
 h4 {
-    padding-top: 50px;
-    font-size: 5.5vh;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 6vh;
+    font-weight: bold;
     text-align: center;
-    color: rgba(29, 158, 141, 0.877);
-    font-family: fantasy;
 }
 h5 {
     font-size: 1.1em;
@@ -27,11 +27,13 @@ h5 {
     padding-bottom: 15%;
 }
 h6 {
-    font-size: 3vh;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3.25vh;
+    font-weight: bold;
     text-align: center;
-    color: rgba(2, 63, 55, 0.877);
-    font-family: quicksand;
 }
+
 
 /*@media (max-width: 280px) {
     h4 {
