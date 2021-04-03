@@ -31,30 +31,30 @@
             font-size: 2vh;
         }
     </style>
-    
+
     <script>
         var index = 0;
         var index2 = 0;
         var imgsList = ["cars", "boo", "buzz", "up", "elastigirl", "rat", "brave", "crush"]
         var labelList = ["Click here to zoom out for the answer!", "Click here to zoom back in!"]
         var instList = ["Can you guess who/what is in the picture and which Pixar movie it's from?",
-        "It's Lightning McQueen from Cars!",
-        "It's Boo from Monsters Inc.!",
-        "It's Buzz from Toy Story!",
-        "It's the house from Up!",
-        "It's Elastigirl from The Incredibles!",
-        "It's ratatouille from Ratatouille!",
-        "It's Merideth from Brave!",
-        "It's Crush from Finding Nemo!"]
+            "It's Lightning McQueen from Cars!",
+            "It's Boo from Monsters Inc.!",
+            "It's Buzz from Toy Story!",
+            "It's the house from Up!",
+            "It's Elastigirl from The Incredibles!",
+            "It's ratatouille from Ratatouille!",
+            "It's Merida from Brave!",
+            "It's Crush from Finding Nemo!"]
         function changeImage() {
             if (index == 0) {
                 index = 1;
             }
             else index = 0;
             var image1 = document.getElementById("myImage");
-            image1.src = imgsList[index2] + (index+1) + ".jpg";
-            document.getElementById("clickme").innerHTML=labelList[index];
-            document.getElementById("inst").innerHTML=instList[index*(index2+1)];
+            image1.src = imgsList[index2] + (index + 1) + ".jpg";
+            document.getElementById("clickme").innerHTML = labelList[index];
+            document.getElementById("inst").innerHTML = instList[index * (index2 + 1)];
         }
         function goNext() {
             if (index2 == (imgsList.length - 1));
@@ -68,13 +68,18 @@
             index = 1;
             changeImage();
         }
-  </script>
+    </script>
 </head>
 
 <body>
-       <div class="img-container" id="unscdir" style="text-align: center;">
+    <div class="img-container" id="unscdir" style="text-align: center;">
+        <h9>
+            Pixar Unscramble Puzzle!
+        </h9>
+        <br>
         <h8>
-            Directions: Unscramble the Pixar movie titles and enter them below. Then, copy the letters with numbers above them into their respective spots under the question to solve the riddle!
+            Directions: Unscramble the Pixar movie titles and enter them below. Then, copy the letters with numbers
+            above them into their respective spots under the question to solve the riddle!
         </h8>
     </div>
     <div id=unsc class="img-container" style="text-align: center">
@@ -150,7 +155,7 @@
             <div>
                 <form id="sg1">
                     <div style="display: inline-block; padding-top: 0.5em;">
-                        <label id=lid style="padding-left: 0em;"><input name="member" id="member"
+                        <label id=lid style="padding-left: 0em;">13<input name="member" id="member"
                                 maxlength="1" /></label id=lid>
                         <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
                         <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
@@ -192,7 +197,7 @@
                         <label id=lid style="padding-left: 1.25em;"><input name="member" id="member"
                                 maxlength="1" /></label id=lid>
                         <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                        <label id=lid>13<input name="member" id="member" maxlength="1" /></label id=lid>
+                        <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
                         <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
                     </div>
 
@@ -211,7 +216,11 @@
             </div>
         </div>
         <br>
-        <div style="padding-top: 2vh; padding-bottom: 2vh;"><h8>Why did the employee get fired from the Pixar Cinema?</h8></div>
+        <br>
+        <div id=unscans>
+            <div style="padding-top: 2vh">
+                <h8>Why did the employee get fired from the Pixar Cinema?</h8>
+            </div>
             <div>
                 <form id="sg1">
                     <div style="display: inline-block; padding-top: 0.5em;">
@@ -258,9 +267,10 @@
                     </div>
                 </form>
             </div>
+        </div>
     </div>
     <div id=zoom class="img-container">
-        <div id=zoomtitles >
+        <div id=zoomtitles>
             <h4>
                 Guess the Zoomed-In Picture!
             </h4>
@@ -273,7 +283,8 @@
         <br>
         <br>
         <div class="img-container">
-            <img id="myImage" class="img-fluid" src="cars1.jpg" alt="Zoomed-In Picture Guessing Game" style="padding-bottom: 15%;">
+            <img id="myImage" class="img-fluid" src="cars1.jpg" alt="Zoomed-In Picture Guessing Game"
+                style="padding-bottom: 15%;">
         </div>
         <div id="zoombutton">
             <button id="clickme" onclick="changeImage()">Click here to zoom out for the answer!</button>
